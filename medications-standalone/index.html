@@ -40,8 +40,8 @@
                 displayPatient (pt);
             });
             smart.patient.api.fetchAllWithReferences(
-                { type: "MedicationOrder" },
-                [ "MedicationOrder.medicationReference" ]
+                { type: "MedicationRequest" },
+                [ "MedicationRequest.medicationReference" ]
             ).then(function(results, refs) {
                 if (results.length) {
                     med_list.innerHTML = "";
