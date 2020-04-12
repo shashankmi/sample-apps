@@ -4,8 +4,11 @@
     <script src="node_modules/fhirclient/fhir-client.js"></script>
     <script>
       FHIR.oauth2.authorize({
-        "client_id": "my_web_app",
-        "scope":  "user/*.*"
+          "client": {
+              "client_id": "DAyxwqtO8rtGIOx6qSaTHYYQCZuCR1ly",
+              "scope":  "patient/*.read launch/patient"
+          },
+          "server": "https://healthapix-demo-dev.apigee.net/v1/stu3/STU3_F920123C-66A6-4AEC-963D-023ED07D4932"
       });
     </script>
   </head>
